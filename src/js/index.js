@@ -99,11 +99,11 @@ const deckContainer = createDeckContainer()
 window.initMap = async () => {
   /** Map View */
   const map = new map4d.Map(mapContainer, {
-    center: [-74, 40.72],
+    center: [105.569248,21.686979],
     tilt: 30,
     zoom: 15,
     controls: true,
-    mapType: "roadmap",
+    mapType: "map3d",
     bearing: 0
   })
 
