@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    }
+
+    #map {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+        z-index: 9999;
+    }
+
+    header> nav > ul {
+        display: flex;
+        list-style: none;
+    }
+
+    header> nav > ul li{
+        margin: 6px;
+    }
+
+    header> nav > ul li a{
+        color: #333;
+    }
