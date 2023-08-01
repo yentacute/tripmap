@@ -90,8 +90,6 @@ const staticLayers = [
 ]
 
 
-
-
 const mapContainer = document.getElementById("map")
 const deckContainer = createDeckContainer()
 
@@ -99,11 +97,11 @@ const deckContainer = createDeckContainer()
 window.initMap = async () => {
   /** Map View */
   const map = new map4d.Map(mapContainer, {
-    center: [105.569248,21.686979],
+    center: [-74, 40.72],
     tilt: 30,
     zoom: 15,
     controls: true,
-    mapType: "map3d",
+    mapType: "roadmap",
     bearing: 0
   })
 
@@ -254,3 +252,15 @@ function updateDeckContainerSize() {
   }
 }
 
+// window.addEventListener('load', function() {
+//   const mode = document.querySelector('.btn');
+//   console.log(mode);
+//   let modeData = mode.getAttribute('data-mode');
+//   mode.addEventListener('click', function(event) {
+//     const mode = event.currentTarget.getAttribute('data-mode');
+//     if(mode === 'map3d') {
+//       event.currentTarget.setAttribute('data-mode','roadmap')
+//     }
+//   })
+
+// })
